@@ -8,7 +8,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Volunteer Sign Up</title>
 
     <style>
         body {
@@ -20,7 +20,7 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -50,16 +50,33 @@
             color: red;
             margin-left: 5px; /* Add some spacing between the label and the asterisk */
         }
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Volunteer Sign Up</h1>
+    </div>
   <div class="container">
-
     <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D2300000092PS" method="POST">
 
         <input type=hidden name='captcha_settings' value='{"keyname":"WebtoLead","fallback":"true","orgId":"00D2300000092PS","ts":""}'>
         <input type=hidden name="oid" value="00D2300000092PS">
-        <input type=hidden name="retURL" value="http://canrise.ca">
+        <input type=hidden name="retURL" value="https://www.canrise.ca">
         
         <!--  ----------------------------------------------------------------------  -->
         <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -88,6 +105,9 @@
         </form>
 
   </div>
+  <div class="footer">
+    <p>© 2023 Volunteer Organization</p>
+</div>
         
 </body>
 </html>
